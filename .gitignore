@@ -26,6 +26,8 @@ dist-ssr/
 # OS
 .DS_Store
 Thumbs.db
+
 .terraform/
 *.tfstate
+*.tfstate.*
 *.tfstate.backup
