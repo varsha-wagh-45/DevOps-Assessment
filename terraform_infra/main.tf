@@ -30,6 +30,7 @@ resource "aws_security_group" "web_sg" {
 resource "aws_instance" "app_server" {
   ami           = "ami-019715e0d74f695be"
   instance_type = "t3.micro"
+   key_name      = "deveops-assignment"
 
   vpc_security_group_ids = [aws_security_group.web_sg.id]
 
