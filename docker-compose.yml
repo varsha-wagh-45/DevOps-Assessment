@@ -1,6 +1,6 @@
 services:
   backend:
-    image: ${{ secrets.DOCKER_USERNAME }}/django-api:latest
+    image: varshawagh/django-api:latest
     container_name: django_api
     ports:
       - "8000:8000"
@@ -10,7 +10,7 @@ services:
       - appnet
 
   frontend:
-    image: ${{ secrets.DOCKER_USERNAME }}/react-app:latest
+    image: varshawagh/react-app:latest
     container_name: react_app
     ports:
       - "3000:80"
